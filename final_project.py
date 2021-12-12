@@ -27,7 +27,7 @@ st.write("league of legends is a game where each team picks 5 champions and batt
 st.header("This is the dataset I'm are using")
 # import file and clean data
 st.write('after loading the data set we first find the columns that are numerical and only take such columns')
-df = pd.read_csv(r"high_diamond_ranked_10min.csv")
+df = pd.read_csv("\high_diamond_ranked_10min.csv")
 #df = pd.read_csv(r"C:\Users\joe fang\Downloads\high_diamond_ranked_10min.csv")
 num_cols = [c for c in df.columns if is_numeric_dtype(df[c])]
 df = df.loc[:,num_cols]
